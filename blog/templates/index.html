@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class = all>
+        <a href="{% url 'detail' %}" style = "color : #6A0888" class="fontDream">WORD COUNTER 소개</a>
+
+        <form action="{% url 'count' %}">
+            <textarea cols = "40" rows="10" name="fulltext"></textarea>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type = "submit" value="Count!" style = "color : #220A29" class = "fontBB"/>
+        </form>
+    </div>
+
+
+{% endblock %}

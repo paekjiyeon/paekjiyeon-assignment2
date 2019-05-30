@@ -1,0 +1,86 @@
+
+<head>
+    <!-- CSS -->
+<style>
+    @font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; }
+    @font-face { font-family: 'BBTreeGR'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_nine_@1.1/BBTreeGR.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+    .fontBB{
+        font-family: 'BBTreeGR';
+    }
+    .fontDream {
+        font-family: 'S-CoreDream-8Heavy';
+    }
+    /* 100글자 이내 정도 일때 box 디자인
+    .countbox{
+        width: 1000px;
+        height : 200px;
+        padding : 10px;
+        border : 2px solid #6A0888;
+        margin : 10px;
+        background-color : white;
+        text-align : left;
+        padding-left : 30px;
+    } */
+
+    .button {
+        background-color : white;
+        border-radius: 95px 95px;
+    }
+
+    .box {
+        width: 500px;
+        height : 280px;
+        padding : 10px;
+        border : 2px solid #6A0888;
+        margin : 10px;
+        background-color : white;
+        text-align : left;
+        padding-left : 50px;
+        font-family: 'BBTreeGR';
+    }
+    ul{
+        list-style:none;
+    }
+
+    .all {
+        text-align : center;
+        padding-top : 100px;
+        padding-right : 30px;
+    }
+
+    .sentence {
+        color : #6A0888;
+    }
+    
+</style>
+<div class="pos-f-t">
+    <a href = "{% url 'index' %}">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <h5 class="text-white h4" >WORD COUNT</h5>
+        <span  class="text-muted">LIKE LION 7 KANGWON PAEKJIYEON</span>
+      </div>
+    </div>
+    </a>
+    <nav class="navbar navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+</head>
+
+
+<body style = "background-color : #E6E0F8">
+    <div class = "container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+
+<!--부트 스트랩-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br><br>
+<center><h2 class="fontDream"><strong>WORD COUNTER?</strong></h2>
+</br>
+<p class = "fontBB">사용자가 입력한 문장 등을 <strong>띄어쓰기</strong>를 기준으로</p>
+<p class = "fontBB"> 단어의 개수를 세주는 프로그램</p>
+<br>
+
+<p class = "fontDream"> <strong>WORD COUNTER 사용예시 : </strong>
+    <br>
+    <div class = "box">
+        <br>
+        <div class = "sentence"><strong>입력한 문장 :</strong> 멋쟁이 사자처럼 7기 백지연  </div> 
+        <br>
+        당신이 입력한 텍스트는 <strong>4단어</strong>로 구성되어 있습니다.<br>
+        <strong>입력한 텍스트 :</strong> 멋쟁이 사자처럼 7기 백지연 <br>
+        <strong>단어 카운트 :</strong> <br>
+        <ul>
+            <li>멋쟁이 : 1번 <br></li>
+            <li>사자처럼 : 1번 <br></li>
+            <li>7기 : 1번 <br></li>
+            <li>백지연 : 1번 <br></li></p>
+        </ul>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "{% url 'index' %}" style = "color : #6A0888" class = "button"><strong>HOME</strong></a>
+        </center>
+
+{% endblock %}
